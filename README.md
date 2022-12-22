@@ -1,4 +1,5 @@
 # Guide For Building IRC "Stack" 
+# (Incomplete, this is a project still in progress. Debate has sparked as to how to complete it)
 (Debian + Nginx + UnrealIRCd + Anope + etc)
 <br><br>
 This is **NOT** a program, it is a step by step guide for you to build an IRC "Stack" on a Virtual Private Server (VPS) from a VPS company such as Vultr.
