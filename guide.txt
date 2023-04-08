@@ -17,3 +17,32 @@ openssl dhparam -out /etc/ssl/certs/dhparam.pem 4096;
 mkdir -p /var/lib/letsencrypt/.well-known;
 chgrp www-data /var/lib/letsencrypt;
 chmod g+s /var/lib/letsencrypt;
+
+
+# now we need to make an nginx config for our website
+# make sure to change example.com to whatever your domain is
+cd /etc/nginx/sites-available
+cp /etc/nginx/sites-available/default /etc/nginx/sites-available/example.com
+
+#edit the configuration by adding your domain
+nano /etc/nginx/sites-available/example.com
+
+#copy it
+cp /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/example.com
+
+# generate ssl certificate
+sudo certbot --nginx - example.com -d www.example.com
+
+# if tests pass, continue
+
+cd /home
+mkdir network
+
+# change the owner to user
+
+cd network
+
+git clone https://github.com/unrealircd/unrealircd.git
+
+cd unrealircd
+./Config
