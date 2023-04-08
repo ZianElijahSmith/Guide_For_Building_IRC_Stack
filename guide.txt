@@ -4,7 +4,7 @@
 # make sure you use this guide as a non-root user with sudo when necessary
 
 # install necessary stuff
-sudo apt -y install build-essential nginx git python3-pip curl wget ufw zlib1g-dev libffi-dev libssl-dev python3-certbot certbot
+sudo apt -y install build-essential nginx git python3-pip curl wget ufw zlib1g-dev libffi-dev libssl-dev python3-certbot-nginx
 
 # turn on and allow http and https
 sudo ufw allow 'Nginx HTTP' ; sudo ufw allow 'Nginx HTTPS'
