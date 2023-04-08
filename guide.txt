@@ -1,0 +1,19 @@
+# This guide assumes you have ssh'd into your Debian VPS. 
+# Currently using Debian 11
+# This also assumes you have used the <pre>adduser</pre> command to build a new non-root user
+# make sure you use this guide as a non-root user with sudo when necessary
+
+# install necessary stuff
+sudo apt -y install build-essential nginx git python3-pip curl wget ufw zlib1g-dev libffi-dev libssl-dev python3-certbot certbot
+
+# turn on and allow http and https
+sudo ufw allow 'Nginx HTTP' ; sudo ufw allow 'Nginx HTTPS'
+
+
+# Let's create a SSL certificate, will take a while
+openssl dhparam -out /etc/ssl/certs/dhparam.pem 4096;
+
+# Make dir for ssl tests
+mkdir -p /var/lib/letsencrypt/.well-known;
+chgrp www-data /var/lib/letsencrypt;
+chmod g+s /var/lib/letsencrypt;
