@@ -3,8 +3,8 @@
 (Debian + Nginx + UnrealIRCd + Anope + etc)
 <br><br>
 This is **NOT** a program, it is a step by step guide for you to build an IRC "Stack"
-Please read the guide here on substack:
-https://open.substack.com/pub/ziansmith/p/guide-how-to-make-an-irc-server-stack?r=1wvie1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true
+Please read the guide here on substack (It's free and has photos, the github will be updated):
+https://open.substack.com/pub/ziansmith/p/guide-how-to-make-an-irc-server-stack
 
 The files in this repo are for this guide.
 
