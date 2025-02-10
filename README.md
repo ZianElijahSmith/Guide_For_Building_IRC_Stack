@@ -1,5 +1,5 @@
 # Guide For Building IRC "Stack" 
-# (Incomplete, this is a project still in progress. Debate has sparked as to how to complete it)
+# The base is complete, the rest is being updated
 (Debian + Nginx + UnrealIRCd + Anope + etc)
 <br><br>
 This is **NOT** a program, it is a step by step guide for you to build an IRC "Stack"
